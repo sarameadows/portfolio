@@ -8,11 +8,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     color: var(--first-color);
     font-family: Geneva, Tahoma, sans-serif;
+}
+
+.flex-row {
+    display: flex;
 }
 
 /* Header Styles */
@@ -32,11 +37,11 @@ header h1 {
     font-size: 50px;
     margin: 0;
     color: var(--text-color);
-    text-shadow: 0 0 8px rgba(0, 0, 0, .25);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
 }
 
 header a {
-    text-decoration: none;
+    
     color: var(--first-color);
 }
 
@@ -57,7 +62,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 8px rgba(0, 0, 0, .25);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
 }
 
 /* About Me Section Styles */
@@ -85,11 +90,63 @@ header nav ul li a {
 }
 
 .biography-text h2{
-    font-size: 30px;
+    font-size: 60px;
     padding: 50px 0 30px 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
 }
 
 .biography-text p {
     font-weight: lighter;
     font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
 }
+
+/* Work Section Style */
+
+.work {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    display: flex;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 25px;
+    flex: 1 20%;
+    border-right: #D0C9C0 solid 2px;
+    margin: 40px;
+}
+
+.heading h2 {
+    font-size: 60px;
+    padding: 40px 20px 0 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-between;
+    text-align: center;
+    flex: 2 50%;
+}
+
+.project:first-child {
+    flex: 1 100%;
+}
+
+.project:not:first-child {
+    flex: 1 50%;
+}
+
+.project img {
+    height: 200px;
+    border: 10px var(--first-color) solid;
+    border-radius: 30px;
+    flex:content;
+}
+
