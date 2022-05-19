@@ -127,16 +127,17 @@ header nav ul li a {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    width: 1000px;
+    margin: 100px;
 }
 
 .project {
     position: relative;
-    /* moved from .project img */
     border: 10px var(--first-color) solid; 
     border-radius: 30px;
+    width: 400px;
 }
 
 .project h3{
@@ -154,7 +155,8 @@ header nav ul li a {
 }
 
 .project img {
-    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Contact Me Section Styles */
@@ -184,6 +186,7 @@ header nav ul li a {
     align-items: center;
     justify-content: space-around;
     margin: 0 100px;
+    width: 1000px;
 }
 
 .links a {

@@ -10,6 +10,9 @@ A website that showcases portfolio of work samples.
 # Website
 https://sarameadows.github.io/portfolio/
 
+# Snapshot
+<img src = "./assets/images/mockup.png" alt="mockup" />
+
 ## Contribution
 Made by Sara Meadows
 
