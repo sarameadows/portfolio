@@ -150,4 +150,39 @@ header nav ul li a {
     flex:content;
 }
 
+/* Contact Me Section Styles */
+.contact {
+    background-color: var(--third-color);
+    color: var(--first-color);
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.links {
+    color: var(--first-color);
+    margin: 7px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: var(--first-color);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+}
