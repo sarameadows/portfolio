@@ -122,7 +122,6 @@ header nav ul li a {
     font-size: 60px;
     padding: 40px 20px 0 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, .50);
-    
 }
 
 .projects {
@@ -135,6 +134,9 @@ header nav ul li a {
 
 .project {
     position: relative;
+    /* moved from .project img */
+    border: 10px var(--first-color) solid; 
+    border-radius: 30px;
 }
 
 .project h3{
@@ -151,11 +153,8 @@ header nav ul li a {
     flex: 1 50%;
 }
 
-.project-img img {
+.project img {
     height: 200px;
-    border: 10px var(--first-color) solid;
-    border-radius: 30px;
-    flex:content;
 }
 
 /* Contact Me Section Styles */
@@ -165,19 +164,29 @@ header nav ul li a {
     display: flex;
 }
 
+.contact h2 { /*working here!!!!!!*/
+    font-size: 60px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 20px;
+    flex: 1 20%;
+    border-right: #D0C9C0 solid 2px;
+    margin: 40px;
+}
+
 .links {
     color: var(--first-color);
-    margin: 7px 0;
-}
-
-.links ul {
     display: flex;
     list-style: none;
-    padding: 20px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 100px;
 }
 
-.links ul li a {
+.links a {
     text-decoration: none;
     color: var(--first-color);
     padding: 10px 15px;
