@@ -7,7 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -130,9 +129,18 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    flex: 2 50%;
+}
+
+.project {
+    position: relative;
+}
+
+.project h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .project:first-child {
@@ -155,27 +163,18 @@ header nav ul li a {
     background-color: var(--third-color);
     color: var(--first-color);
     display: flex;
-    flex-wrap: wrap;
 }
 
 .links {
     color: var(--first-color);
     margin: 7px 0;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: block;
-    box-sizing: border-box;
-
 }
 
 .links ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .links ul li a {
@@ -185,4 +184,13 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
 }
