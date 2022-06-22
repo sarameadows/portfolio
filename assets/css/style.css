@@ -185,8 +185,14 @@ header nav ul li a {
     height: 250px;
 }
 
-#filler1, #filler2, #filler3, #filler4 {
-    background-image: url("../images/run-buddy.png");
+#work-day-scheduler {
+    background-image: url("../images/work-day-scheduler.png");
+    height: 250px;
+    background-position: top;
+}
+
+#password-generator {
+    background-image: url("../images/password-generator.png");
     height: 250px;
 }
 
