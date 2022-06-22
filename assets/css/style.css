@@ -211,7 +211,7 @@ header nav ul li a {
     text-align: right;
     padding: 0 20px;
     flex: 1 20%;
-    border-right: #D0C9C0 solid 2px;
+    border-right: var(--second-color) solid 2px;
     margin: 40px;
 }
 
@@ -242,7 +242,7 @@ header nav ul li a {
         justify-content: center;
     }
     .heading, .contact h2 {
-        border-bottom: #D0C9C0 solid 2px;
+        border-bottom: var(--second-color) solid 2px;
         border-right: none;
         text-align: center;
     }
