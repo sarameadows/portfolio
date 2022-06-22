@@ -1,7 +1,12 @@
 :root {
-    --first-color: #D0C9C0;
-    --second-color: #6D8B74;
-    --third-color: #5F7161;
+    --first-color: #FBF8F1;
+    /* #F2FFE9; */
+    /* #D0C9C0; */
+    --second-color: #5F7161;
+    /* #FF8C8C; */
+    /* #557C55; */
+    /* #E4AEC5; */
+     /* #5F7161; */
 }
 
 * {
@@ -27,7 +32,7 @@ header {
     flex-wrap: wrap;
     padding: 20px 35px;
     top: 0;
-    background-color: var(--second-color);
+    background-color: var(--first-color);
     background-size: cover;
 }
 
@@ -35,13 +40,13 @@ header h1 {
     font-weight: bold;
     font-size: 50px;
     margin: 0;
-    color: var(--text-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    color: var(--second-color);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .25);
 }
 
 header a {
     
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 header nav {
@@ -61,7 +66,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .50);
 }
 
 /* About Me Section Styles */
@@ -70,7 +75,7 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
 }
 
 .biography-img {
@@ -90,7 +95,7 @@ header nav ul li a {
 
 .biography-text h2{
     font-size: 60px;
-    padding: 50px 0 30px 0;
+    padding: 30px 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, .50);
 }
 
@@ -103,8 +108,8 @@ header nav ul li a {
 /* Work Section Style */
 
 .work {
-    background-color: var(--second-color);
-    color: var(--first-color);
+    background-color: var(--first-color);
+    color: var(--second-color);
     display: flex;
 }
 
@@ -114,14 +119,14 @@ header nav ul li a {
     text-align: right;
     padding: 0 20px;
     flex: 1 20%;
-    border-right: #D0C9C0 solid 2px;
+    border-right: var(--second-color) solid 2px;
     margin: 40px;
 }
 
 .heading h2 {
     font-size: 60px;
     padding: 40px 20px 0 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .25);
 }
 
 .projects {
@@ -130,7 +135,7 @@ header nav ul li a {
     justify-content: space-between;
     text-align: center;
     width: 1000px;
-    margin: 100px;
+    margin: 30px 100px;
 }
 
 .project {
@@ -143,7 +148,7 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-    border: 10px var(--first-color) solid;
+    border: 10px var(--second-color) solid;
     position: relative;
 }
 
@@ -151,9 +156,9 @@ header nav ul li a {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     padding: 20px;
-    color: var(--third-color);
+    color: var(--first-color);
     
 }
 
@@ -165,14 +170,14 @@ header nav ul li a {
     flex: 1 50%;
 }
 
-#run-buddy {
-    background-image: url("../images/run-buddy.png");
-    height: 250px;
-}
-
 #pokedex {
     background-image: url("../images/pokedex.jpeg");
     height: 500px;
+}
+
+#run-buddy {
+    background-image: url("../images/run-buddy.png");
+    height: 250px;
 }
 
 #weather-dashboard {
@@ -187,7 +192,7 @@ header nav ul li a {
 
 /* Contact Me Section Styles */
 .contact {
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     color: var(--first-color);
     display: flex;
 }
