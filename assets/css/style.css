@@ -134,9 +134,9 @@ header nav ul li a {
 }
 
 .project {
-    position: relative; 
-    /* border-radius: 30px; */
+    position: relative;
     width: 400px;
+    margin-top: 20px;
 }
 
 .project-style {
@@ -167,11 +167,16 @@ header nav ul li a {
 
 #run-buddy {
     background-image: url("../images/run-buddy.png");
-    height: 500px;
+    height: 250px;
 }
 
 #pokedex {
     background-image: url("../images/pokedex.jpeg");
+    height: 500px;
+}
+
+#weather-dashboard {
+    background-image: url("../images/weather-dashboard.png");
     height: 250px;
 }
 
@@ -267,5 +272,45 @@ header nav ul li a {
 }
 
 @media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 45px;
+    }
+
+    .heading h2 {
+        padding: 0;
+    }
     
+    #pokedex {
+        height: 250px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        padding: 10px;
+    }
+
+    .biography-img {
+        margin-top: 20px;
+    }
+
+    .biography-img img {
+        height: 200px;
+        border: 10px var(--first-color) solid;
+        border-radius: 30px;
+    }
+
+    .heading {
+        margin: 40px 40px 15px 40px;
+    }
+
+    .projects, .links {
+        margin-top: 0;
+    }
+
+    .biography-text {
+        padding-top: 0;
+    }
 }
