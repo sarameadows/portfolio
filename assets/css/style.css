@@ -83,7 +83,7 @@ header nav ul li a {
 }
 
 .biography-img img{
-    height: 400px;
+    height: 300px;
     border: 10px var(--first-color) solid;
     border-radius: 30px;
 }
@@ -162,17 +162,17 @@ header nav ul li a {
     
 }
 
-.project:first-child {
+/* .project:first-child {
     flex: 1 100%;
-}
+} */
 
-.project:not:first-child {
+/* .project:not:first-child {
     flex: 1 50%;
-}
+} */
 
 #pokedex {
     background-image: url("../images/pokedex.jpeg");
-    height: 500px;
+    height: 250px;
 }
 
 #endless-pawsibilities {
@@ -196,16 +196,54 @@ header nav ul li a {
     height: 250px;
 }
 
-/* Contact Me Section Styles */
-.contact {
+/* Skills Section Styles */
+.skills {
     background-color: var(--second-color);
     color: var(--first-color);
     display: flex;
 }
 
-.contact h2 { /*working here!!!!!!*/
+.skills h2 {
     font-size: 60px;
     text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 20px;
+    flex: 1 20%;
+    border-right: var(--first-color) solid 2px;
+    margin: 40px;
+}
+
+.list {
+    color: var(--first-color);
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 100px;
+    width: 1000px;
+}
+
+.list li {
+    text-decoration: none;
+    color: var(--first-color);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/* Contact Me Section Styles */
+.contact {
+    background-color: var(--first-color);
+    color: var(--second-color);
+    display: flex;
+}
+
+.contact h2 { /*working here!!!!!!*/
+    font-size: 60px;
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, .50); */
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -216,7 +254,7 @@ header nav ul li a {
 }
 
 .links {
-    color: var(--first-color);
+    color: var(--second-color);
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -228,16 +266,16 @@ header nav ul li a {
 
 .links a {
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--second-color);
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .50);
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, .50); */
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    .work, .biography, .contact, .links {
+    .work, .biography, .contact, .skills, .links {
         flex-direction: column;
         justify-content: center;
     }
