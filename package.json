@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "## Purpose A website that showcases portfolio of work samples.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarameadows/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarameadows/portfolio/issues"
+  },
+  "homepage": "https://github.com/sarameadows/portfolio#readme",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
