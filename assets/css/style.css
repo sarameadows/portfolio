@@ -180,8 +180,8 @@ header nav ul li a {
     height: 250px;
 }
 
-#weather-dashboard {
-    background-image: url("../images/weather-dashboard.png");
+#apply {
+    background-image: url("../images/apply.png");
     height: 250px;
 }
 
@@ -275,16 +275,16 @@ header nav ul li a {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    .work, .biography, .contact, .skills, .links {
+    .work, .biography, .contact, .skills, .list, .links {
         flex-direction: column;
         justify-content: center;
     }
-    .heading, .contact h2 {
+    .heading, .contact, .skills h2 {
         border-bottom: var(--second-color) solid 2px;
         border-right: none;
         text-align: center;
     }
-    .projects, .links {
+    .projects, .links, .list {
         max-width: 90%;
         margin: 5%;
         justify-content: center;
@@ -314,6 +314,11 @@ header nav ul li a {
     }
 
     .links a {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .list li {
         display: inline-block;
         font-size: 20px;
     }
@@ -355,7 +360,7 @@ header nav ul li a {
         margin: 40px 40px 15px 40px;
     }
 
-    .projects, .links {
+    .projects, .links, .list {
         margin-top: 0;
     }
 
